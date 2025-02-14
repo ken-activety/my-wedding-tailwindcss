@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my wedding</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montaga&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<style type="text/tailwindcss">
+    @theme{
+        --font-montaga: "Montaga";
+    }
+</style>
 </head>
 
 <body>
-    <header class=" bg-red-400">
-        <nav class="pt-4 bg-green-400">
-            <ul class="flex justify-center items-center gap-16">
+    <header class="">
+        <nav class="pt-4 ">
+            <ul class="flex justify-center items-center gap-16 font-montaga">
                 <li>Home</li>
                 <li>Our Story</li>
                 <li>Venue</li>
@@ -25,17 +33,17 @@
         </nav>
     </header>
     <!-- section 2 -->
-    <div class="flex flex-col justify-center  items-center gap-4 pt-18">
-        <p>Please join us to celebrate</p>
+    <div class="flex flex-col justify-center  items-center gap-4 pt-18 font-montaga">
+        <p class="text-[#C6754D]">Please join us to celebrate</p>
         <h2 class="font-bold text-6xl">Caleb & Amaya</h2>
-        <p>July 15, 2022 - Boise, Idaho</p>
+        <p class="text-[#C6754D]">July 15, 2022 - Boise, Idaho</p>
     </div>
 
     <div class="flex justify-center pt-12">
         <img src="./asset/image/carly-rae-hobbins-zNHOIzjJiyA-unsplash 1.svg" alt="" class="h-[]">
     </div>
 
-    <div class="flex  justify-center items-center py-12 bg-[#C6754D] mt-12">
+    <div class="flex  justify-center items-center py-12 bg-[#C6754D] mt-12 font-montaga">
         <div class="flex flex-1 text-8xl justify-center items-center">
             Our <br> Story
         </div>
@@ -57,11 +65,11 @@
         <img src="./asset/image/vince-fleming-NUHSbynw9IE-unsplash 1.svg" alt="">
     </div>
 
-    <section class="flex bg-green-400 py-20 ">
-        <div class="flex flex-col flex-1 pl-12  bg-green-900 gap-6">
-            <h6 class="">The Venue</h6>
-            <h2>Gino Winery Estate</h2>
-            <div class="gap-4">
+    <section class="flex py-20 font-montaga w-full h-96">
+        <div class="flex flex-col flex-1 pl-12 gap-6">
+            <h6 class="text-[#C6754D]">The Venue</h6>
+            <h2 class="text-5xl">Gino Winery Estate</h2>
+               <div class="flex flex-col gap-6">
                 <p class="pt">Feugiat pretium egestas enim blandit purus euismod. Feugiat magna <br> aliquam lectus
                     lectus eu amet.
                     Eros, accumsan purus enim nascetur <br> quam diam felis, fringilla vari</p>
@@ -69,30 +77,30 @@
             </div>
         </div>
 
-        <div class=" flex-1  bg-red-400">
-            <!-- <img src="./asset/image/annie-spratt-OWq8w3BYMFY-unsplash.svg" alt="" class="z-50 w-xs">
-            <img src="./asset/image/irina-iriser-woP_9Ps2RWY-unsplash 1.svg" alt="" class="z-40 w-xs"> -->
-            <img src="./asset/image/zane-persaud-jLU-kQEUylE-unsplash.svg" alt="" class="z-0 w-">
+            <div class=" flex-1 flex flex-col flex-block">
+                <img src="./asset/image/annie-spratt-OWq8w3BYMFY-unsplash.svg" alt="" class="z-1 w-94">
+               <img src="./asset/image/irina-iriser-woP_9Ps2RWY-unsplash 1.svg " alt="" class="z-0 w-94 pt-24  -translate-y-100"> 
+               <img src="./asset/image/zane-persaud-jLU-kQEUylE-unsplash.svg" alt="" class="z-2 w-86 -translate-y-170 pl-4 pb-22 ">
         </div>
         </div>
     </section>
 
-    <section class="bg--400 flex w-full h-80 justify-center items-center px-16">
-        <div class="flex flex-1 flex-col bg--200 gap-8">
+    <section class=" flex w-full h-80 justify-center items-center px-16 pt-20 font-montaga">
+        <div class="flex flex-1 flex-col gap-8">
             <h1 class="text-4xl font-bold text-[#2B1105]">Hotel 1</h1>
             <p>Feugiat pretium egestas enim blandit purus <br> euismod. Feugiat magna aliquam lectus lectus <br> eu
                 amet. Eros, accumsan purus enim nascetur <br> quam diam felis, fringilla variu</p>
             <button class="border-1 w-22 h-10  text-[#C6754D]">Button</button>
         </div>
 
-        <div class="flex flex-1 flex-col bg--200 gap-8">
+        <div class="flex flex-1 flex-col gap-8">
             <h1 class="text-4xl font-bold text-[#2B1105]">Hotel 2</h1>
             <p>Feugiat pretium egestas enim blandit purus <br> euismod. Feugiat magna aliquam lectus lectus <br> eu
                 amet. Eros, accumsan purus enim nascetur <br> quam diam felis, fringilla variu</p>
             <button class="border-1 w-22 h-10  text-[#C6754D]">Button</button>
         </div>
 
-        <div class="flex flex-1 flex-col bg--200 gap-8">
+        <div class="flex flex-1 flex-col gap-8">
             <h1 class="text-4xl font-bold text-[#2B1105]">Hotel 3</h1>
             <p>Feugiat pretium egestas enim blandit purus <br> euismod. Feugiat magna aliquam lectus lectus <br> eu
                 amet. Eros, accumsan purus enim nascetur <br> quam diam felis, fringilla variu</p>
@@ -100,17 +108,17 @@
         </div>
     </section>
 
-    <section class="flex flex-col p-16">
+    <section class="flex flex-col p-16 font-montaga">
         <div class="py-6">
             <h2 class="text-4xl font-bold text-[#2B1105]">The Bridal Party</h2>
         </div>
         <div class="flex gap-20 ">
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-2">
                 <h4 class="underline decoration-[#C6754D]">Groomsmen</h4>
                 <h5>Bridemaids</h5>
             </div>
             <div>
-                <img src="/asset/image/Rectangle 20.png" alt="">
+                <img src="./asset/image/Rectangle 20.svg" alt="">
                 <h2>Julian Bernard</h2>
             </div>
             <div>
@@ -122,13 +130,13 @@
                 <h2>Patrik Pavone</h2>
             </div>
             <div>
-                <img src="./asset/image/Rectangle 20.svg" alt="">
+                <img src="/asset/image/Rectangle 20.png" alt="">
                 <h2>David Tatum</h2>
             </div>
         </div>
     </section>
 
-    <section class="flex flex-col justify-center items-center py-12 px20 gap-12 text-[#2B1105]">
+    <section class="flex flex-col justify-center items-center py-12 px20 gap-12 text-[#2B1105] font-montaga">
         <div class="flex justify-center text-5xl ">
             <h2>Itinerary</h2>
         </div>
@@ -183,8 +191,8 @@
                 duis dignissim adipiscing sem.</p>
         </div>
 
-        <div class="flex  justify-center gap-12 ">
-            <section class="flex flex-col gap-4 ">
+        <div class="flex  justify-center gap-12 font-montaga ">
+            <section class="flex flex-col gap-4 font-montaga">
                 <div class="flex justify-center items-center gap-20">
                     <div>
                         <h3>First Name</h3>
@@ -234,7 +242,7 @@
                         </div>
                     </section>
 
-                    <section class="flex flex-col ">
+                    <section class="flex flex-col font-montaga">
                         <div>
                             <h3>Attendance</h3>
                         </div>
@@ -281,7 +289,7 @@
     </section>
 
 
-    <footer class="flex justify-center py-12">
+    <footer class="flex justify-center py-12 font-montaga">
         <ul class="flex gap-12">
             <li>Home</li>
             <li>Our Story</li>
